@@ -6,7 +6,7 @@
 
 AI Engineer specializing in large language models, speech systems, OCR, model optimization, and production AI applications.
 
-[Email](mailto:locgopro005@gmail.com) · [LinkedIn](https://www.linkedin.com/in/gin-tonic/) · [Hugging Face](https://huggingface.co/bunbohue) · [CV](CV/main.pdf)
+[Email](mailto:locgopro005@gmail.com) - [LinkedIn](https://www.linkedin.com/in/gin-tonic/) - [Hugging Face](https://huggingface.co/bunbohue) - [CV](CV/main.pdf)
 
 ## About
 
