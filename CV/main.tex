@@ -1,0 +1,165 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\input{glyphtounicode}
+
+% font options
+\usepackage{newpxtext}
+\linespread{1.0}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}  % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{5pt}
+
+% sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-6pt}]
+
+% ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% custom commands
+\newcommand{\cvitem}[1]{
+  \item\small{
+    {#1\vspace{-2pt}}
+  }
+}
+
+\newcommand{\cvheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3 & \small #4 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\cvheadingend}{\end{itemize}}
+\newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]}
+\newcommand{\cvitemend}{\end{itemize}\vspace{-5pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\footnotesize$\bullet$}}$}
+
+\begin{document}
+
+% contact information
+\begin{center}
+  \textbf{\LARGE\scshape Nguyen Dinh Loc} \\
+  \vspace{1pt}\small
+  \href{mailto:locgopro005@gmail.com}{locgopro005@gmail.com}
+  $\ \diamond\ $ 
+  +84 987 395 459
+  $\ \diamond\ $
+  \href{https://huggingface.co/bunbohue}{HuggingFace}
+  $\ \diamond\ $
+  \href{https://www.linkedin.com/in/gin-tonic/}{LinkedIn}
+\end{center}
+
+\section{Professional Experience}
+\cvheadingstart
+  \cvheading
+    {eUp}{Hanoi, Vietnam}
+    {AI Engineer}{11/2024 - Present}
+  \cvitemstart
+    \cvitem{\textbf{Todaii Japanese}: Fine-tuned GPT-4 with supervised fine-tuning (SFT) to rewrite NHK articles by JLPT level; built prompt workflows and evaluation loops with the OpenAI API.}
+    \cvitem{\textbf{Mazii Dictionary}: Implemented a Cached Augmented Generation (CAG) pipeline for personalized Japanese dictionary lookup using GPT-4.1-mini, LangChain, and LangGraph.}
+    \cvitem{\textbf{Mazii Speech}: Built real-time Japanese TTS streaming and anime-style voice cloning with KokoroTTS, VITS, HuBERT, and RMVPE; optimized inference with INT8 quantization, ONNX and LRU caching.}
+    \cvitem{\textbf{Mazii Foundation Model}: Post-trained (DFT) a lightweight model (Gemma 4 MoE) to Japanese foundation model for vocabulary, kanji, grammar, and general knowledge base; Optimized inference with 4-bit quantization (NVFP4); Optimized serving with KV-cache utilization, Radix Attention, and Continuous Batching.}
+    \cvitem{\textbf{HeyChina AI}: Built personalized AI characters for Chinese learners; applied post-training (DPO) in GLM-4.7-Flash. Optimized inference with 8-bit quantization (FP8). Deploy to production using LangChain, and LangGraph.}
+  \cvitemend
+
+  \cvheading
+    {Panasonic R\&D Center Vietnam}{Hanoi, Vietnam}
+    {AI Engineer}{07/2024 - 10/2024}
+  \cvitemstart
+    \cvitem{Researched and developed the CTO Translation Tool, a meeting-audio assistant for transcription, translation, and meeting notes.}
+    \cvitem{Integrated ASR with speaker diarization, OpenAI API workflows, and a Gradio interface.}
+  \cvitemend
+
+  \cvheading
+    {VinBigData Institute}{Hanoi, Vietnam}
+    {Teaching Assistant}{07/2024 - 09/2024}
+  \cvitemstart
+    \cvitem{Supported the NLP course for the VinBDI AI Engineer Training Program, including lectures, exercises, and student guidance.}
+  \cvitemend
+
+  \cvheading
+    {Kaopiz Software Co., Ltd.}{Hanoi, Vietnam}
+    {AI Engineer}{06/2023 - 06/2024}
+  \cvitemstart
+    \cvitem{Developed Japanese OCR modules for text detection and recognition using RCNN, CRNN, and PaddleOCR.}
+    \cvitem{Optimized model runtime with ONNX, TensorFlow Lite, and OpenVINO for Intel CPU deployment.}
+    \cvitem{Built an image-matching service for FOCUS Media using image embeddings, compression, and augmentation; containerized the service with Docker and achieved 93.64\% search accuracy.}
+  \cvitemend
+
+  \cvheading
+    {Intelligent Software Engineering Lab - BKAI}{Hanoi, Vietnam}
+    {Research Assistant}{03/2022 - 09/2023}
+  \cvitemstart
+    \cvitem{Researched AI-assisted software engineering across requirements engineering and debugging.}
+    \cvitem{Explored ML methods for representing software artifacts and automating stages of the software development lifecycle.}
+  \cvitemend
+\cvheadingend
+
+\section{Education}
+\cvheadingstart
+  \cvheading
+    {Hanoi University of Science and Technology}{Hanoi, Vietnam}
+    {Master's Student, Data Science Program, Information and Communication Technology}{10/2025 - Present}
+  \cvheading
+    {Hanoi University of Science and Technology}{Hanoi, Vietnam}
+    {Engineer Degree, Information and Communication Technology (Very Good)}{09/2019 - 09/2024}
+  \cvheading
+    {High School for the Gifted - Vinh University}{Nghe An, Vietnam}
+    {Physics, Very Good}{09/2016 - 09/2019}
+\cvheadingend
+
+\section{Technical Skills}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{\textbf{Programming}: Python, C++}
+  \cvitem{\textbf{ML / DL}: Model Training - Evaluation - Compression, Deep Reinforcement Learning, Transformers-based, Encoder-Decoder models, Causal Language Modeling}
+  \cvitem{\textbf{AI Agents}: Prompt Engineering, RAG, LangChain, LangGraph, OpenAI API}
+  \cvitem{\textbf{AI Frameworks}: Hugging Face, PyTorch, TensorFlow, TensorFlow Lite}
+  \cvitem{\textbf{AI Inference / Optimization}: ONNX, OpenVINO, SGLang, vLLM, TensorRT-LLM, KV cache optimization, Continuous Batching, Flash Attention}
+  \cvitem{\textbf{Backend / Tools}: Docker, Flask API, FastAPI, Git, GitLab}
+\cvitemend
+\cvheadingend
+
+\section{Additional}
+\cvheadingstart
+\item
+\cvitemstart
+  \cvitem{\textbf{Award}: Best Presentation Award, Summer School 2023 on Modern Machine Learning: ``Foundations and Applications'' (BKAI, NAVER, VinBigData)}
+  \cvitem{\textbf{Languages}: English (TOEIC 885)}
+\cvitemend
+\cvheadingend
+
+\end{document}
