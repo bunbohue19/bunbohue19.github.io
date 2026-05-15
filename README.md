@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="image/avatar.jpg" alt="Nguyen Dinh Loc" width="160" />
-</p>
-
 # Nguyen Dinh Loc
 
 AI Engineer specializing in large language models, speech systems, OCR, model optimization, and production AI applications.
