@@ -6,7 +6,9 @@ AI Engineer specializing in large language models, speech systems, OCR, model op
 
 ## About
 
-I build applied AI systems for language learning, Japanese NLP, speech, OCR, and developer-facing tools. My recent work focuses on post-training, retrieval and cached augmented generation, real-time TTS, voice cloning, and optimized inference for production workloads.
+Hi, I’m Nguyen Dinh Loc, an AI Engineer passionate about building practical AI systems, especially in large language models, speech synthesis, and intelligent applications. I enjoy working across the full AI pipeline, from model training and optimization to deployment and real-world product integration.
+
+Outside of work, I like playing games such as League of Legends and CS2, reading detective books, and listening to pop music. I’m also a fan of coffee and cocktails, which usually keep me company during both focused work sessions and relaxed evenings.
 
 ## Experience Highlights
 
