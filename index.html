@@ -66,53 +66,59 @@
 
         <div class="timeline">
           <article class="timeline-item featured">
-            <div class="timeline-date">Nov 2024 - Present</div>
+            <div class="timeline-date">11/2024 - Present</div>
             <div class="timeline-body">
               <h3>AI Engineer &middot; eUp</h3>
-              <p>
-                Building AI systems across Todaii Japanese, Mazii Dictionary, Mazii Speech,
-                Mazii Foundation Model, and HeyChina AI.
-              </p>
               <ul>
-                <li>Fine-tuned GPT-4 with SFT for JLPT-level NHK article rewriting and evaluation loops.</li>
-                <li>Implemented CAG for personalized Japanese dictionary lookup with GPT-4, LangChain, and LangGraph.</li>
-                <li>Built real-time Japanese TTS streaming and anime-style voice cloning with optimized inference.</li>
-                <li>Post-trained lightweight foundation models and improved serving with quantization, KV cache use, radix attention, and continuous batching.</li>
+                <li><strong>Todaii Japanese</strong>: Fine-tuned GPT-4 with SFT to rewrite NHK articles by JLPT level; built prompt workflows and evaluation loops with the OpenAI API. Rating quality from 1,000+ users feedbacks showed a 80% improvement in readability and comprehension for JLPT N5-N3 levels.</li>
+                <li><strong>Mazii Dictionary</strong>: Built a personalized Japanese dictionary lookup using a summarized user-profile cache (distilled from session-history summarization) injected at query time via a LangGraph state machine over GPT-4 — bounding per-request context cost as history grows. Current active users: 12,000+, rating 4.2/5 satisfaction.</li>
+                <li><strong>Mazii Speech</strong>: Built real-time Japanese TTS with text conditioning, voice cloning with Rectified Flow Diffusion Transformer (RF-DiT); Optimized inference with INT8 quantization, ONNX and LRU caching.</li>
+                <li><strong>Mazii Foundation Model</strong>: Post-training (DFT) Gemma 4 MoE to Japanese foundation model for vocabulary, kanji, grammar, and general knowledge base. Optimized inference with 4-bit quantization (NVFP4), serving with vLLM engine. Implemented for internal Japanese editors/collaborators with 4.8/5 satisfaction rating.</li>
+                <li><strong>Hanzii</strong>: Built personalized AI characters for Chinese learners; Applied Post-training (Online-DPO with Claude-Opus-4.6) in GLM-4. Optimized inference with 8-bit quantization (FP8), serving with SGLang engine. Deploy to production using LangChain, and LangGraph. Current active users: 1,000+ with a 4.7/5 average satisfaction rating.</li>
               </ul>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-date">Jul 2024 - Oct 2024</div>
+            <div class="timeline-date">07/2024 - 10/2024</div>
             <div class="timeline-body">
               <h3>AI Engineer &middot; Panasonic R&amp;D Center Vietnam</h3>
-              <p>
-                Developed the CTO Translation Tool, a meeting-audio assistant for transcription,
-                translation, and note generation using ASR, diarization, OpenAI workflows, and Gradio.
-              </p>
+              <ul>
+                <li>Researched and developed the C-level Translation Tool, a meeting-audio assistant for transcription, translation, and meeting notes.</li>
+                <li>Integrated ASR with speaker diarization, OpenAI API, FastAPI workflows for internal use.</li>
+              </ul>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-date">Jun 2023 - Jun 2024</div>
+            <div class="timeline-date">07/2024 - 09/2024</div>
             <div class="timeline-body">
-              <h3>AI Engineer &middot; Kaopiz Software</h3>
-              <p>
-                Developed Japanese OCR modules with RCNN, CRNN, and PaddleOCR, optimized deployment
-                with ONNX, TensorFlow Lite, and OpenVINO, and built image-matching services with
-                Dockerized delivery.
-              </p>
+              <h3>Teaching Assistant &middot; VinBigData Institute</h3>
+              <ul>
+                <li>Supported the NLP course for the VinBDI AI Engineer Training Program, including lectures, exercises, and student guidance.</li>
+              </ul>
             </div>
           </article>
 
           <article class="timeline-item">
-            <div class="timeline-date">Mar 2022 - Sep 2023</div>
+            <div class="timeline-date">06/2023 - 06/2024</div>
             <div class="timeline-body">
-              <h3>Research Assistant &middot; BKAI</h3>
-              <p>
-                Researched AI-assisted software engineering, including requirements engineering,
-                debugging, and machine learning representations of software artifacts.
-              </p>
+              <h3>AI Engineer &middot; Kaopiz Software Co., Ltd.</h3>
+              <ul>
+                <li>Developed Japanese OCR modules for text detection and recognition using RCNN, CRNN, and PaddleOCR.</li>
+                <li>Optimized model runtime with ONNX, TensorFlow Lite, and OpenVINO for CPU deployment.</li>
+                <li>Built an image-matching service for FOCUS Media using image embeddings, compression, and augmentation; containerized the service with Docker and achieved 93.64% search accuracy.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">03/2022 - 09/2023</div>
+            <div class="timeline-body">
+              <h3>Research Assistant &middot; Intelligent Software Engineering Lab - BKAI</h3>
+              <ul>
+                <li>Researched AI-assisted software engineering across requirements engineering and debugging.</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -152,20 +158,28 @@
 
         <div class="skill-groups">
           <div>
-            <h3>Languages</h3>
+            <h3>Programming</h3>
             <p>Python, C++</p>
           </div>
           <div>
-            <h3>LLMs and Agents</h3>
-            <p>Prompt engineering, RAG, LangChain, LangGraph, OpenAI API</p>
+            <h3>ML / DL</h3>
+            <p>Model Training, Evaluation, Compression, Deep Reinforcement Learning, Transformers-based, Encoder-Decoder models, Causal Language Modeling</p>
           </div>
           <div>
-            <h3>ML Frameworks</h3>
+            <h3>AI Agents</h3>
+            <p>Prompt Engineering, RAG, LangChain, LangGraph, OpenAI API</p>
+          </div>
+          <div>
+            <h3>AI Frameworks</h3>
             <p>Hugging Face, PyTorch, TensorFlow, TensorFlow Lite</p>
           </div>
           <div>
-            <h3>Infrastructure</h3>
-            <p>Docker, Flask, FastAPI, Git, GitLab</p>
+            <h3>AI Inference / Optimization</h3>
+            <p>ONNX, OpenVINO, SGLang, vLLM, TensorRT-LLM, KV-cache optimization, Flash Attention, Speculative Decoding</p>
+          </div>
+          <div>
+            <h3>Backend / Tools</h3>
+            <p>Docker, Flask API, FastAPI, Git, GitLab</p>
           </div>
         </div>
       </section>
@@ -178,28 +192,28 @@
 
         <div class="education-list">
           <article>
-            <span>2025 - Present</span>
+            <span>10/2025 - Present</span>
             <h3>Hanoi University of Science and Technology</h3>
-            <p>Master's Student, Data Science Program, Information and Communication Technology</p>
+            <p>Master's Student, Data Science Program, Information and Communication Technology (Current CPA: 3.64/4.0)</p>
           </article>
           <article>
-            <span>2019 - 2024</span>
+            <span>09/2019 - 09/2024</span>
             <h3>Hanoi University of Science and Technology</h3>
-            <p>Engineer Degree, Information and Communication Technology</p>
+            <p>Engineer Degree, Information and Communication Technology (Very Good)</p>
           </article>
           <article>
-            <span>2016 - 2019</span>
+            <span>09/2016 - 09/2019</span>
             <h3>High School for the Gifted - Vinh University</h3>
-            <p>Physics</p>
+            <p>Physics (Very Good) &middot; Nghe An, Vietnam</p>
           </article>
         </div>
       </section>
 
       <section class="section recognition" aria-label="Recognition and language">
         <div>
-          <span class="section-kicker">Recognition</span>
+          <span class="section-kicker">Award</span>
           <h2>Best Presentation Award</h2>
-          <p>Summer School 2023 on Modern Machine Learning: Foundations and Applications.</p>
+          <p>Summer School 2023 on Modern Machine Learning: "Foundations and Applications" (BKAI, NAVER, VinBigData).</p>
         </div>
         <div>
           <span class="section-kicker">Language</span>
