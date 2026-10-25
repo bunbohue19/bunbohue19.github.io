@@ -502,3 +502,7 @@ main {
     flex-direction: column;
   }
 }
+
+.lifestyle {
+  grid-template-columns: 1fr;
+}
