@@ -59,6 +59,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\cvsubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\cvheadingstart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\cvheadingend}{\end{itemize}}
 \newcommand{\cvitemstart}{\begin{itemize}[label=\textopenbullet]}
@@ -84,8 +91,24 @@
 \section{Professional Experience}
 \cvheadingstart
   \cvheading
+    {FPT Software}{Hanoi, Vietnam}
+    {AI Leader}{06/2026 - Present}
+  \cvitemstart
+    \cvitem{\textbf{AI Coding Agent for Android Automotive}: Developing an AI Coding Agent platform that supports Android engineers in UI development; the platform has completed its PoC and is moving to mass production.}
+    \cvitem{Leading the team building an agent that covers every SDLC phase from requirements to integration testing: Requirements Traceability Matrix (RTM), AAOS 16 feasibility analysis, Software Architecture Document (SAD), Software Design Document (SDD), code generation, unit test generation, and integration test generation.}
+    \cvitem{\textbf{Tech stack}: Harness engineering for AI agents (context, tools, verification loops, guardrails, observability controls); Model: Qwen-3.8-27B-NVFP4; Platform: GitHub Copilot CLI.}
+    \cvitem{\textbf{Skills}: Project Management, Team Management, NLP, AI Agents.}
+  \cvitemend
+
+  \cvheading
     {eUp}{Hanoi, Vietnam}
-    {AI Engineer}{11/2024 - Present}
+    {AI Consultant (Freelance, Remote)}{07/2026 - 10/2026}
+  \cvitemstart
+    \cvitem{Consulted on AI solutions for Mazii Dictionary products.}
+    \cvitem{Developed Conversational AI for Japanese learners.}
+  \cvitemend
+  \cvsubheading
+    {AI Engineer}{11/2024 - 06/2026}
   \cvitemstart
     \cvitem{\textbf{Todaii Japanese}: Fine-tuned GPT-4 with supervised fine-tuning (SFT) to rewrite NHK articles by JLPT level; built prompt workflows and evaluation loops with the OpenAI API. \\Rating quality from 1,000+ users feedbacks showed a 80\% improvement in readability and comprehension for JLPT N5-N3 levels.}
     \cvitem{\textbf{Mazii Dictionary}: Built a personalized Japanese dictionary lookup using a summarized user-profile cache (distilled from session-history summarization) injected at query time via a LangGraph state machine over Gemini 3 — bounding per-request context cost as history grows; \\Current active users: 20,000+, rating 4.2/5 satisfaction.}
@@ -104,7 +127,7 @@
 
   \cvheading
     {VinBigData Institute}{Hanoi, Vietnam}
-    {Teaching Assistant}{07/2024 - 09/2024}
+    {Teaching Assistant}{07/2024 - 08/2024}
   \cvitemstart
     \cvitem{Supported the NLP course for the VinBDI AI Engineer Training Program, including lectures, exercises, and student guidance.}
   \cvitemend
@@ -144,11 +167,12 @@
 \item
 \cvitemstart
   \cvitem{\textbf{Programming}: Python, C++}
-  \cvitem{\textbf{ML / DL}: Model Training - Evaluation - Compression, Deep Reinforcement Learning, Transformers-based models, Causal Language Modeling}
-  \cvitem{\textbf{AI Agents}: Prompt Engineering, RAG, LangChain, LangGraph, LangSmith, OpenAI API}
+  \cvitem{\textbf{ML / DL}: Model Training - Evaluation - Compression, Deep Reinforcement Learning, Transformers-based models, Causal Language Modeling, Optimal Transport, Speech Processing}
+  \cvitem{\textbf{AI Agents}: Harness Engineering, Prompt Engineering, RAG, LangChain, LangGraph, LangSmith, OpenAI API, GitHub Copilot CLI}
   \cvitem{\textbf{AI Frameworks}: Hugging Face, PyTorch, TensorFlow}
   \cvitem{\textbf{AI Inference / Optimization}: ONNX, OpenVINO, SGLang, vLLM, TensorRT-LLM, KV-cache optimization, Flash Attention, Speculative Decoding}
   \cvitem{\textbf{Backend / Tools}: Docker, Flask API, FastAPI, Git, GitLab}
+  \cvitem{\textbf{Leadership}: Project Management, Team Management}
 \cvitemend
 \cvheadingend
 
@@ -158,15 +182,7 @@
 \item
 \cvitemstart
   \cvitem{\textbf{Award}: Best Presentation Award, Summer School 2023 on Modern Machine Learning: ``Foundations and Applications'' (BKAI, NAVER, VinBigData)}
-\cvitemend
-
-\item
-\cvitemstart
   \cvitem{\textbf{Publication}: Japanese Knowledge Base Synthetic Data}
-\cvitemend
-
-\item
-\cvitemstart
   \cvitem{\textbf{Languages}: English (TOEIC 885)}
 \cvitemend
 

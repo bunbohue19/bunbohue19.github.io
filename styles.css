@@ -380,6 +380,10 @@ main {
   font-weight: 900;
 }
 
+.education-list p {
+  grid-column: 2;
+}
+
 .recognition {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -439,6 +443,10 @@ main {
   .education-list article,
   .recognition {
     grid-template-columns: 1fr;
+  }
+
+  .education-list p {
+    grid-column: auto;
   }
 
   .system-grid,
