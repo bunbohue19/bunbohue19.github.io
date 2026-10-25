@@ -506,3 +506,39 @@ main {
 .lifestyle {
   grid-template-columns: 1fr;
 }
+
+.car-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.car-gallery figure {
+  margin: 0;
+}
+
+.car-gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.car-gallery figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.car-gallery figcaption a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .car-gallery {
+    grid-template-columns: 1fr;
+  }
+}
